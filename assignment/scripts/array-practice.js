@@ -76,7 +76,9 @@ console.log(`Added an animal to beginning: ${animalArray}`);
 // 4.b. TODO: Create a variable `entree` and assign it a string value of
 //      an entree that you enjoy.
 //      Add the `entree` to the beginning of your `favoriteFoods` array.
-
+let entree = 'steak';
+favoriteFoods.unshift(entree);
+console.log('added an entree to the beginning:', entree);
 
 // Example: Remove the last animal by using the Array.pop method.
 let removedAnimal = animalArray.pop();
@@ -92,7 +94,9 @@ let colors = ['orange', 'yellow', 'green', 'teal'];
 //      Don't forget! Use console.log to verify that the `colors`
 //      array only contains three items now, AND to verify that `lastColor`
 //      contains the value "teal".)
-
+let lastColor = colors.pop();
+console.log('removed the last color', lastColor);
+console.log('the colors are now', colors);
 
 // Example: Remove the first animal using the Array.shift method.
 removedAnimal = animalArray.shift();
@@ -102,8 +106,8 @@ console.log('The animals are now', animalArray);
 // 4.d. TODO: Remove the first value from the `colors` array and store it
 //      inside a new variable called `firstColor`.
 //      To verify that your code worked, console.log `firstColor`!  
-
-
+let firstColor = colors.shift();
+console.log('removed the first color', firstColor);
 
 
 // STRETCH GOALS:
